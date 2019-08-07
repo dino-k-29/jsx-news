@@ -14,10 +14,34 @@ ul {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
 .link {
   color: rgb(187, 46, 31);
   text-decoration: none;
   font-weight: bold;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
 }
 
 .meta-info-light {
