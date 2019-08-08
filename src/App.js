@@ -1,5 +1,6 @@
 import React from 'react';
 import PostsList from './PostsList'
+import Post from './Post'
 import PropTypes from 'prop-types'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 import { fetchMainPosts } from './utils/api';
@@ -62,6 +63,7 @@ class App extends React.Component {
 
           <Route exact path="/" render={() => <Posts type='top' />} />
           <Route path="/new" render={() => <Posts type='new' />} />
+          <Route path="/post" component={Post}/>
         </div>
       </Router>
     );
